@@ -5,7 +5,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.widget.LinearLayout;
 
 import com.example.tugas1.adapters.TrailAdapter;
 import com.example.tugas1.models.Trail;
@@ -35,6 +34,6 @@ public class MainActivity extends AppCompatActivity {
 //        com.example.tugas1.adapters.ClubAdapter clubAdapter = new com.example.tugas1.adapters.ClubAdapter(listClub);
         TrailAdapter trailAdapter = new TrailAdapter(listTrail);
         rvTrail.setAdapter(trailAdapter);
-        rvTrail.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        rvTrail.setLayoutManager(new LinearLayoutManager(this));
     }
 }
